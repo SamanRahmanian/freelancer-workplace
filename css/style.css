@@ -1,0 +1,75 @@
+@font-face {
+  font-family: Vazir;
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Vazir.eot");
+  src: url("fonts/Vazir.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Vazir.woff2") format("woff2"),
+    url("fonts/Vazir.woff") format("woff"),
+    url("fonts/Vazir.ttf") format("truetype");
+}
+@font-face {
+  font-family: Vazir;
+  font-style: normal;
+  font-weight: bold;
+  src: url("fonts/Vazir-Bold.eot");
+  src: url("fonts/Vazir-Bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Vazir-Bold.woff2") format("woff2"),
+    url("fonts/Vazir-Bold.woff") format("woff"),
+    url("fonts/Vazir-Bold.ttf") format("truetype");
+}
+body {
+  font-family: "Vazir", Arial, sans-serif;
+  font-weight: normal;
+}
+.container-fluid .card {
+  transition: all 0.2s linear;
+}
+.container-fluid .card:hover {
+  margin-top: -15px;
+}
+.slide .carousel-control-prev {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 35%;
+  right: 80px;
+}
+.slide .carousel-control-next {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 35%;
+  left: 80px;
+}
+.ul-menu {
+  list-style-type: none;
+  width: auto;
+  margin: auto;
+  border-radius: 3px;
+  position: absolute;
+  right: 20px;
+  display: inline-block;
+  height: 100vh;
+  background: #fff;
+  transition: all 0.2s linear;
+}
+.ul-menu:hover{
+  background: #b1b1b1;
+}
+.activ-li {
+  background-color: #0d6efd;
+}
+.activ-li svg {
+  color: white;
+}
+.profile {
+  margin-left: 7rem;
+  margin-top: 30px;
+}
+svg{
+  transition: all 0.2s linear;
+}
+svg:hover{
+  color: white;
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>لیست پروژها</title>
+</head>
+<body>
+    <header>
+        <div class="container-fluid bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light position-relative position-sticky top-0">
+                <div class="container-fluid ">
+                  <a class="navbar-brand mx-5 d-flex align-items-center" href="index.html">
+                    Workplace 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-code text-primary mx-1" viewBox="0 0 16 16">
+                        <path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"/>
+                    </svg>
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-lg-0">
+                      <li class="nav-item dropdown mt-2 me-3"><a href="" class="text-decoration-none text-dark">لیست پروژها</a></li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
+                          قوانین کاری
+                        </a>
+                        <ul class="dropdown-menu rounded-0 border-0 shadow" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#employ">کارفرما</a></li>
+                          <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#freelancer">مجری پروژه</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item mt-2 position-absolute end-0 mx-5">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="login.html" class="text-decoration-none text-dark">ورود</a></li>
+                              <li class="breadcrumb-item"><a href="register.html" class="text-decoration-none text-dark">ثبت نام</a></li>
+                            </ol>
+                          </nav>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <div class=" text-center mx-auto mb-5 bg-light"><br><br>
+                <h2 class="fw-normal">شرکت Workplace اینجاست تا فریلنسر ها بیکار نماند.<br> از علمی که داری استفاده کن و کسب درامد کن.</h2>
+                <button class="btn btn-primary mt-5 px-5 py-3 fs-6 my-5"><a href="register.html" class="text-decoration-none text-light">میخواهم پروژه بگیرم</a></button>
+              </div>
+        </div>
+    </header>
+
+    <!-- Modal -->
+    <div class="modal fade" id="employ" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">قوانین کارفرما</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            کارفرما موظف است طبق قوانین شرکت Workplace هنگام شروع به کار 20 درصد مبلغ تایین شده برای پروژه را بپردازد و هنگام تحویل پروژه مابقی مبلغ پروژه را به صورت یکجا پرداخت کند 
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="freelancer" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">قوانین مجری پروژه (فریلنسر)</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            مجری پروژه میباید عین تمامی موارد ذکر شده در قرارداد را انجام دهد و هنگام ارائه دادن .پروژه کامل و مورد پسند کارفرما باشد در غیر این صورت در صورتی که کارفرما از پروژه ناراضی باشد توسط پشتیبان های شرکت Workplace پروژه بررسی شده و در صورتی که مشکل وجود داشته باشد مجری پروژه جریمه شده و پروژه توسط تیم شرکت کامل شده تا هیچ گونه صدمه ای به کارفرما وارد نگردد.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container w-75 mx-auto">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item rounded-0 border-0 border-bottom border-1">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  فیلتر
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                          <label for="keyWord" class="form-label">کلمه کلیدی</label>
+                          <input type="text" class="form-control" id="keyWord" placeholder="مثلا وبسایت شرکتی ">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="level" class="form-label">سطح</label>
+                            <select id="level" class="form-select">
+                              <option selected>سطح پایین</option>
+                              <option>سطح متوسط</option>
+                              <option>سطح بالا</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="city" class="form-label">شهر</label>
+                          <input type="text" class="form-control" placeholder="مثلا کرمان" id="city">
+                        </div>
+                        <div class="col-md-3">
+                          <label for="price1" class="form-label">مبلغ از :</label>
+                          <select id="price1" class="form-select">
+                            <option selected>10,000,000</option>
+                            <option>20,000,000</option>
+                            <option>30,000,000</option>
+                            <option>50,000,000</option>
+                            <option>100,000,000</option>
+                            <option>200,000,000</option>
+                            <option>500,000,000</option>
+                          </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="price1" class="form-label">تا :</label>
+                            <select id="price1" class="form-select">
+                              <option selected>10,000,000</option>
+                              <option>20,000,000</option>
+                              <option>30,000,000</option>
+                              <option>50,000,000</option>
+                              <option>100,000,000</option>
+                              <option>200,000,000</option>
+                              <option>500,000,000</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary px-4">فیلتر</button>
+                        </div>
+                      </form>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container w-75 mx-auto mt-5">
+      <div class="row d-flex justify-content-center ">
+        <div class="card col-12 col-md-12 col-lg-5 mb-3 shadow-lg rounded-0 border-0 ms-md-5" style="max-width: 540px;">
+          <a href="project-page.html" class="text-decoration-none text-dark">
+            <div class="row g-0">
+              <div class="col-md-4 d-none d-md-inline-block text-primary px-4 m-0 p-sm-5 p-md-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="200" fill="currentColor" class="bi bi-code" viewBox="0 0 16 16">
+                  <path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"/>
+                </svg>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">طراحی وبسایت فروشگاه لوازم خانگی</h5>
+                  <small>مبلغ پروژه : 90,000,000 ریال</small>
+                  <div class="card-text mt-3">
+                    <p class="card-text">وبسایت دارای درگاه پرداخت انلاین <br> و همچنین دارای بیش از 300 محصول... </p>
+                    <div>
+                      <span class="badge rounded-pill bg-primary">HTML</span>
+                      <span class="badge rounded-pill bg-primary">CSS</span>
+                      <span class="badge rounded-pill bg-primary">Java script</span>
+                      <span class="badge rounded-pill bg-primary">Python</span>
+                      <span class="badge rounded-pill bg-primary">Django</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="card col-md-12 col-lg-5 mb-3 shadow-lg rounded-0 border-0 ms-md-5 p-sm-5 p-md-0" style="max-width: 540px;">
+          <a href="project-page.html" class="text-decoration-none text-dark">
+            <div class="row g-0">
+              <div class="col-md-4 d-none d-md-inline-block text-primary px-4 m-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="200" fill="currentColor" class="bi bi-vector-pen" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M10.646.646a.5.5 0 0 1 .708 0l4 4a.5.5 0 0 1 0 .708l-1.902 1.902-.829 3.313a1.5 1.5 0 0 1-1.024 1.073L1.254 14.746 4.358 4.4A1.5 1.5 0 0 1 5.43 3.377l3.313-.828L10.646.646zm-1.8 2.908-3.173.793a.5.5 0 0 0-.358.342l-2.57 8.565 8.567-2.57a.5.5 0 0 0 .34-.357l.794-3.174-3.6-3.6z"/>
+                  <path fill-rule="evenodd" d="M2.832 13.228 8 9a1 1 0 1 0-1-1l-4.228 5.168-.026.086.086-.026z"/>
+                </svg>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">طراحی لوگوی برند کفش</h5>
+                  <small>مبلغ پروژه : 10,000,000 ریال</small>
+                  <div class="card-text mt-3">
+                    <p class="card-text">نیازمند به یک لوگوی زیبا و ساده<br>ترجیحا از اسم شرکت در لوگو استفاده شود...</p>
+                    <div>
+                      <span class="badge rounded-pill bg-primary">Adobe photoshop</span>
+                      <span class="badge rounded-pill bg-primary">Adobe illustrator</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="card col-md-12 col-lg-5 mb-3 shadow-lg rounded-0 border-0 ms-md-5 p-sm-5 p-md-0" style="max-width: 540px;">
+          <a href="project-page.html" class="text-decoration-none text-dark">
+            <div class="row g-0">
+              <div class="col-md-4 d-none d-md-inline-block text-primary px-4 m-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="200" fill="currentColor" class="bi bi-app" viewBox="0 0 16 16">
+                  <path d="M11 2a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h6zM5 1a4 4 0 0 0-4 4v6a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V5a4 4 0 0 0-4-4H5z"/>
+                </svg>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">نرم افزار حسابداری</h5>
+                  <small>مبلغ پروژه : 150,000,000 ریال</small>
+                  <div class="card-text mt-3">
+                    <p class="card-text">با سلام نرم افزار کاملا شخصی سازی باید بشود<br>فرمول های مورد نیاز به شما ارائه میشود و...</p>
+                    <div>
+                      <span class="badge rounded-pill bg-primary">Android</span>
+                      <span class="badge rounded-pill bg-primary">Java</span>
+                      <span class="badge rounded-pill bg-primary">Kotlin</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="card col-md-12 col-lg-5 mb-3 shadow-lg rounded-0 border-0 ms-md-5 p-sm-5 p-md-0" style="max-width: 540px;">
+          <a href="project-page.html" class="text-decoration-none text-dark">
+            <div class="row g-0">
+              <div class="col-md-4 d-none d-md-inline-block text-primary px-4 m-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="200" fill="currentColor" class="bi bi-code" viewBox="0 0 16 16">
+                  <path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"/>
+                </svg>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">طراحی وبسایت شرکت لوازم ورزشی</h5>
+                  <small>مبلغ پروژه : 50,000,000 ریال</small>
+                  <div class="card-text mt-3">
+                    <p class="card-text">وبسایت جهت معرفی شرکت...<br></p>
+                    <div>
+                      <span class="badge rounded-pill bg-primary">HTML</span>
+                      <span class="badge rounded-pill bg-primary">CSS</span>
+                      <span class="badge rounded-pill bg-primary">Java script</span>
+                      <span class="badge rounded-pill bg-primary">Python</span>
+                      <span class="badge rounded-pill bg-primary">Django</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bd-footer py-5 mt-5 bg-light">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-3 mb-3">
+            <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/">
+              Workplace 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-code text-primary mx-1" viewBox="0 0 16 16">
+                      <path d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"/>
+                  </svg>
+            </a>
+            <ul class="list-unstyled small text-muted">
+              <li class="mb-2"><a class="text-decoration-none text-dark" href="">تیم قدرتمند برنامه نویسی Workplace<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                </svg></a></li>
+              <li class="mb-2"><a href="" class="text-decoration-none text-dark">درباره ما Workplace<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                </svg></a></li>
+              <li class="mb-2">Workplace</li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+            <h5>زمینه های کاری</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#" class="text-decoration-none text-dark">طراحی گرافیکی</a></li>
+              <li class="mb-2"><a href="#" class="text-decoration-none text-dark">برنامه نویسی تحت وب</a></li>
+              <li class="mb-2"><a href="#" class="text-decoration-none text-dark">برنامه نویسی اندروید</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ثبت نام</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row col-md-7 col-lg-4 mx-auto border border-1 border-light shadow p-3">
+            <div class="mb-3">
+                <label for="email" class="form-label">ایمیل</label>
+                <input type="email" class="form-control mb-4" id="email" style="direction: rtl;" placeholder="ایمیل">
+                <label for="username" class="form-label">نام کاربری</label>
+                <input type="email" class="form-control mb-4" id="username" style="direction: rtl;" placeholder="نام کاربری">
+                <label for="password" class="form-label">گذرواژه</label>
+                <input type="password" class="form-control" id="password" placeholder="رمز عبور"><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="Employer">
+                    <label class="form-check-label" for="Employer">
+                      کارفرما
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="Freelancer">
+                    <label class="form-check-label" for="Freelancer">
+                      فریلنسر
+                    </label>
+                  </div>
+                <button class="btn btn-primary w-100 p-1 mt-3">ثبت نام</button>
+                <h6 class="text-center mt-2 fw-normal"><a href="login.html" class="text-decoration-none text-dark">ورود</a></h6>
+                <hr class="divider my-4 mx-2">
+                <h6 class="text-center mt-2 fw-normal">میتوانید توسط حساب گوگل وارد شوید</h6>
+                <button class="btn btn-outline-primary w-100 p-1 mt-4">ثبت اطلاعات با حساب گوگل <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                    <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                  </svg></button>
+              </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
